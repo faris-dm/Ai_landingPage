@@ -1,12 +1,12 @@
 import React from "react";
-import { Coffee } from "lucide-react";
+import Landing from "./pages/Landing";
+import { Coffee, MessageCircleDashed, BotMessageSquare } from "lucide-react";
 
 function App() {
   return (
     <>
-      <div className=" flex gap-2">
-        <div className="text-red-400">app one</div>
-        <Coffee />
+      <div>
+        <Landing />
       </div>
     </>
   );
