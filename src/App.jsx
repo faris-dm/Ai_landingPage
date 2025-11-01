@@ -15,8 +15,16 @@ function App() {
     <>
       <div className="">
         <Landing />
-        <Box icons={<ListCheck />} text="Show my task" />
-        <Box icons={<Star />} text="My  Total Star" />
+        <div className="flex justify-center gap-2  flex-wrap p-3 ">
+          <div className="grid grid-cols-3 gap-4 ">
+            <Box icons={<ListCheck />} text="Show my task" />
+            <Box icons={<Star />} text="My  Total Star" />
+            <Box icons={<Star />} text="My  Total Star" />
+            <Box icons={<Star />} text="My  Total Star" />
+            <Box icons={<Star />} text="My  Total Star" />
+            <Box icons={<Star />} text="My  Total Star" />
+          </div>
+        </div>
       </div>
     </>
   );
