@@ -11,6 +11,8 @@ import {
   Plus,
   GitPullRequest,
   Users,
+  Rocket,
+  CodeXml,
 } from "lucide-react";
 
 function App() {
