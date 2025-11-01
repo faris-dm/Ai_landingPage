@@ -17,14 +17,14 @@ function Landing() {
               </h3>
             </div>
 
-            {/*  tempo message */}
+            {/*  tempo message  good font1000/text-size-4xl*/}
             <div>
               <MessageCircleDashed className="text-[#B0B0B0]  cursor-pointer" />
             </div>
           </nav>
           <div className="text-center py-7">
             <div>
-              <h2 className="text-[#b0b0b0] text-4xl text-mono font-[1000] py-2">
+              <h2 className="text-[#b0b0b0] text-2xl text-mono font-[700] sm:font-[800] md:font-[1000] py-2">
                 Good Afternoon, Solo
               </h2>
               <p className="text-[#b0b0b0] py-1 pb-3 font-sans">

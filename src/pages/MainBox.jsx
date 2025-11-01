@@ -11,8 +11,8 @@ import {
 function MainBox() {
   return (
     <>
-      <div className="flex justify-center  flex-wrap p-3 mt-8 mb-[10rem]">
-        <div className="grid grid-cols-3 gap-5   ">
+      <div className="flex justify-center  flex-wrap p-3 mt-6 mb-[6rem]">
+        <div className="grid grid-cols-2 gap-5 px-2 md:grid-cols-3 lg:grid-cols-3">
           <Box
             icons={
               <div className="bg-[#19BF6E] p-1 rounded">
@@ -21,14 +21,16 @@ function MainBox() {
             }
             text="Show my task"
           />
-          <Box
-            icons={
-              <div className="bg-[#10ACDA] p-1 rounded">
-                <Plus className="text-white" />
-              </div>
-            }
-            text="Create New Task"
-          />
+          <div className="">
+            <Box
+              icons={
+                <div className="bg-[#10ACDA] p-1 rounded">
+                  <Plus className="text-white" />
+                </div>
+              }
+              text="Create New Task"
+            />
+          </div>
           <Box
             icons={
               <div className="bg-[#F55F29] p-1 rounded">
@@ -38,34 +40,40 @@ function MainBox() {
             }
             text="PR Review"
           />
-          <Box
-            icons={
-              <div className="bg-[#DA4CB2] rounded p-1">
-                <Users className="text-white " />
-                {/* #F48811 */}
-              </div>
-            }
-            text="Team Status"
-          />
+          <div className="md:w-90  lg:w-70 lg:ml-20">
+            <Box
+              icons={
+                <div className="bg-[#DA4CB2] rounded p-1">
+                  <Users className="text-white " />
+                  {/* #F48811 */}
+                </div>
+              }
+              text="Team Status"
+            />
+          </div>
 
-          <Box
-            icons={
-              <div className="bg-[#2794E9] p-1 rounded">
-                <Rocket className="text-white " />
-                {/* ##2794E9 */}
-              </div>
-            }
-            text="Deploy Status"
-          />
-          <Box
-            icons={
-              <div className="bg-[#2794E9] p-1 rounded">
-                <CodeXml className="text-white  " />
-                {/* ##2794E9 */}
-              </div>
-            }
-            text="Code"
-          />
+          <div className="md:ml-15 lg:ml-10">
+            <Box
+              icons={
+                <div className="bg-[#2794E9] p-1 rounded">
+                  <Rocket className="text-white " />
+                  {/* ##2794E9 */}
+                </div>
+              }
+              text="Deploy Status"
+            />
+          </div>
+          <div className="md:w-40 md:ml-6  lg:w-60  lg:mr-20 lg:ml-0">
+            <Box
+              icons={
+                <div className="bg-[#2794E9] p-1 rounded">
+                  <CodeXml className="text-white  " />
+                  {/* ##2794E9 */}
+                </div>
+              }
+              text="Code"
+            />
+          </div>
         </div>
       </div>
     </>
