@@ -78,6 +78,9 @@ function App() {
             />
           </div>
         </div>
+        <div className=" text-center  mt-[10rem] mb-5">
+          <input className="w-5/6 p-4" type="text" placeholder="solo NAser " />
+        </div>
       </div>
     </>
   );
