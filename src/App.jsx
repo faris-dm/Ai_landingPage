@@ -9,6 +9,8 @@ import {
   Star,
   ListCheck,
   Plus,
+  GitPullRequest,
+  Users,
 } from "lucide-react";
 
 function App() {
@@ -21,9 +23,9 @@ function App() {
             <Box icons={<ListCheck />} text="Show my task" />
             <Box icons={<Plus />} text="My  Total Star" />
             <Box icons={<GitPullRequest />} text="My  Total Star" />
-            <Box icons={<Star />} text="My  Total Star" />
-            <Box icons={<Star />} text="My  Total Star" />
-            <Box icons={<Star />} text="My  Total Star" />
+            <Box icons={<Users />} text="My  Total Star" />
+            <Box icons={<Rocket />} text="My  Total Star" />
+            <Box icons={<CodeXml />} text="My  Total Star" />
           </div>
         </div>
       </div>
