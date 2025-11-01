@@ -1,12 +1,22 @@
 import React from "react";
 import Landing from "./pages/Landing";
-import { Coffee, MessageCircleDashed, BotMessageSquare } from "lucide-react";
+import Box from "./pages/Box";
+import {
+  Coffee,
+  MessageCircleDashed,
+  BotMessageSquare,
+  Heart,
+  Star,
+  ListCheck,
+} from "lucide-react";
 
 function App() {
   return (
     <>
-      <div>
+      <div className="">
         <Landing />
+        <Box icons={<ListCheck />} text="Show my task" />
+        <Box icons={<Star />} text="My  Total Star" />
       </div>
     </>
   );
