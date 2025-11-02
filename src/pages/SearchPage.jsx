@@ -13,13 +13,13 @@ function SearchPage() {
   return (
     <>
       <div>
-        <div className=" text-center  relative   mt-[5rem]  mb-2">
+        <div className=" text-center  relative   mt-[5rem]  lg:mt-[10rem] mb-2">
           <input
-            className=" px-4 pt-15 pb-4   border bg-[#1B1C2D] border-silver-200 rounded-xl w-8/9 "
+            className=" px-4 pt-15 pb-4   border bg-transparent border-silver-200 rounded-xl w-8/9 "
             type="text"
             placeholder="Ask anything . . . . ."
           />
-          <div className="flex items-center gap-2 absolute  bottom-15 left-12 sm:left-15">
+          <div className="flex items-center gap-2 absolute  bottom-15 left-12 sm:left-15 md:left-20 lg:left-25">
             <div className="flex items-center gap-1   bg-[#363654] rounded  px-2 py-1 mt-2 ">
               <Search size={12} />
               <p className="text-[12px] text-silver-500">Search</p>
@@ -30,7 +30,7 @@ function SearchPage() {
               <p className="text-[12px]">Research</p>
             </div>
           </div>
-          <div className="flex items-center gap-2 absolute  bottom-4 right-12 sm:right-15">
+          <div className="flex items-center gap-2 absolute  bottom-4 right-12 sm:right-15 md:right-20 lg:right-25">
             <Paperclip size={15} />
             <Mic size={15} />
             <AudioLines className="bg-[#303030] rounded  p-1" size={25} />

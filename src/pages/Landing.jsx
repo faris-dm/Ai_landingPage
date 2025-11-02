@@ -1,5 +1,6 @@
 import React from "react";
 import { Coffee, MessageCircleDashed, BotMessageSquare } from "lucide-react";
+import Ai_Logo from "./Ai_Logo";
 
 function Landing() {
   return (
@@ -8,10 +9,11 @@ function Landing() {
         <div className="w-full px-4 py-2">
           <nav className=" flex items-center justify-between px-3">
             <div className="flex items-center gap-2 cursor-pointer">
-              <BotMessageSquare
+              {/* <BotMessageSquare
                 className="text-[#15BC78]  cursor-pointer "
                 size={50}
-              />
+              /> */}
+              <Ai_Logo />
               <h3 className="font-System-ui font-bold text-[#8166F7] ">
                 Cricle <label className="text-[#9E5AF7]">Ai</label>{" "}
               </h3>
@@ -24,7 +26,7 @@ function Landing() {
           </nav>
           <div className="text-center py-7">
             <div>
-              <h2 className="text-[#b0b0b0] text-2xl text-mono font-[700] sm:font-[800] md:font-[1000] py-2">
+              <h2 className="text-[#b0b0b0] text-2xl text-mono font-[700] sm:font-[800] md:font-[1000] py-2 lg:font[1000] lg:text-4xl">
                 Good Afternoon, Solo
               </h2>
               <p className="text-[#b0b0b0] py-1 pb-3 font-sans">
