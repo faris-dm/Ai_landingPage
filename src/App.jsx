@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="">
-        {/* <Slide /> */}
+        <Slide />
         <Landing />
         <MainBox />
         <SearchPage />
