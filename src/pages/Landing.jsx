@@ -6,15 +6,18 @@ function Landing() {
   return (
     <>
       <div>
-        <div className="w-full px-4 py-2">
-          <nav className=" flex items-center justify-between px-3">
-            <div className="flex items-center gap-2 cursor-pointer">
+        <div className="w-full px-4 py-2 ">
+          <nav className=" flex items-center justify-between px-3 ">
+            <div className="flex items-center gap-3 cursor-pointer">
               {/* <BotMessageSquare
                 className="text-[#15BC78]  cursor-pointer "
                 size={50}
               /> */}
-              <Ai_Logo />
-              <h3 className="font-System-ui font-bold text-[#8166F7] ">
+              <div className="z-0 gap-2">
+                {" "}
+                <Ai_Logo className="z-0" />{" "}
+              </div>
+              <h3 className="font-Poppins font-[700] text-[#8166F7] ">
                 Cricle <label className="text-[#9E5AF7]">Ai</label>{" "}
               </h3>
             </div>
