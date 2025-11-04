@@ -1,21 +1,26 @@
 import React from "react";
-import { Coffee, MessageCircleDashed, BotMessageSquare } from "lucide-react";
+import {
+  Coffee,
+  MessageCircleDashed,
+  BotMessageSquare,
+  ListFilter,
+} from "lucide-react";
 import Ai_Logo from "./Ai_Logo";
 
-function Landing() {
+function Landing({ Toggle }) {
   return (
     <>
       <div>
+        <ListFilter
+          onClick={Toggle}
+          className="absolute   top-5 left-2 text-[#15BC78]  cursor-pointer "
+        />
         <div className="w-full px-4 py-2 ">
-          <nav className=" flex items-center justify-between px-3 ">
+          <nav className=" flex items-center ml-5 justify-between px-3 ">
             <div className="flex items-center gap-3 cursor-pointer">
-              {/* <BotMessageSquare
-                className="text-[#15BC78]  cursor-pointer "
-                size={50}
-              /> */}
               <div className="z-0 gap-2">
                 {" "}
-                <Ai_Logo className="z-0" />{" "}
+                <Ai_Logo className="z-0 " />{" "}
               </div>
               <h3 className="font-Poppins font-[700] text-[#8166F7] ">
                 Cricle <label className="text-[#9E5AF7]">Ai</label>{" "}
