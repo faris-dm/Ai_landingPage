@@ -1,9 +1,8 @@
 import React from "react";
 
-const Ai_Logo = ({ Toggle }) => {
+const Ai_Logo = () => {
   return (
     <div
-      onClick={Toggle}
       style={{
         "--size": "50px",
         "--duration": "2s",

@@ -40,7 +40,7 @@ function MainBox() {
             }
             text="PR Review"
           />
-          <div className="md:w-90  lg:w-70 lg:ml-20">
+          <div className="  ">
             <Box
               icons={
                 <div className="bg-[#DA4CB2] rounded p-1">
@@ -52,7 +52,7 @@ function MainBox() {
             />
           </div>
 
-          <div className="md:ml-15 lg:ml-10">
+          <div className="">
             <Box
               icons={
                 <div className="bg-[#2794E9] p-1 rounded">
@@ -63,7 +63,7 @@ function MainBox() {
               text="Deploy Status"
             />
           </div>
-          <div className="md:w-40 md:ml-6  lg:w-60  lg:mr-20 lg:ml-0">
+          <div className="">
             <Box
               icons={
                 <div className="bg-[#2794E9] p-1 rounded">
