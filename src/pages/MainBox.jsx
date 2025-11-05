@@ -11,7 +11,7 @@ import {
 function MainBox() {
   return (
     <>
-      <div className="flex justify-center  flex-wrap p-3 mt-6 mb-[6rem]">
+      <div className="flex justify-center  flex-wrap mt-6 mb-[6rem] sm:mb-[6rem] md:mb-[11rem] lg:mb-[11rem]">
         <div className="grid grid-cols-2 gap-5 px-2 md:grid-cols-3 lg:grid-cols-3">
           <Box
             icons={

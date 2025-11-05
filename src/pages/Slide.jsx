@@ -4,12 +4,8 @@ import { House, Compass, FolderOpen, Library } from "lucide-react";
 
 function Slide({ Visblity_Of_slide, On_Close }) {
   const [NormalColor, NewColor] = useState(null);
-  const Close_Slide = () => {};
   return (
     <>
-      {/*  ${
-     
-    } `} */}
       <div
         className={`fixed top-0 left-0 py-2 px-5  w-90 bg-[#0D1020] h-screen z-1 shadow-lg transform  duration-500 ease-in-out  ${
           Visblity_Of_slide
