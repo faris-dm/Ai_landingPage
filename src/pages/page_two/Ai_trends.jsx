@@ -4,6 +4,7 @@ function Ai_trends({ Seller }) {
   return (
     <>
       <div>
+        <h3> i am solo</h3>
         {/* <div>
           {Seller.map((img, index) => (
             <img key={index} src={img} alt="No Problem" />

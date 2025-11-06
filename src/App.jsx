@@ -8,7 +8,7 @@ import Ai_trends from "./pages/page_two/Ai_trends";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Image_One from "./pages/page_two/images/image.png";
 
-const AllImages = [image];
+const AllImages = [Image_One];
 // {img,heading,text,link})
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
   return (
     <>
       <div className="">
-        <Ai_trends Seller={AllImages} s />
+        <Ai_trends Seller={AllImages} />
+
         {/* <Discover Toggle={() => Now_Open(true)} />
         <Slide Visblity_Of_slide={Not_open} On_Close={() => Now_Open(false)} /> */}
         {/* <Landing Toggle={() => Now_Open(true)} /> */}
