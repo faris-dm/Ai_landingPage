@@ -11,7 +11,7 @@ function Ai_trends({ imgSrc, heading, text, link }) {
               <img
                 width={60}
                 height={60}
-                className=" md:h-30 md:w-30"
+                className="md:h-30 md:w-30"
                 src={imgSrc}
                 alt=""
               />
@@ -26,6 +26,28 @@ function Ai_trends({ imgSrc, heading, text, link }) {
             </div>
           </div>
           {/* 3nd page  */}
+
+          {/* <div className="bg-black mx-3 flex gap-4 px-2 py-3 rounded-xl my-2">
+            <div className="w-15  h-15  md:w-30 md:h-30 rounded-full object-cover bg-white">
+              <img
+                width={60}
+                height={60}
+                className="md:h-30 md:w-30"
+                src={ImageOne}
+                alt=""
+              />
+            </div>
+            <div className="">
+              <h3 className="text-[#F7F5F3] font-[500]">{heading}</h3>
+              <p className="text-[12px] text-[#F7F5F3]"> {text}</p>
+              <a className="text-xs " href="">
+                {link}
+              </a>
+            </div>
+          </div> */}
+          {/* thered pages */}
+
+          {/*  fourth pages */}
         </div>
       </div>
     </>

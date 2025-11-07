@@ -8,6 +8,9 @@ import Ai_trends from "./pages/page_two/Ai_trends";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Splash from "./pages/page_two/images/splash_VideoImges.webp";
 import Invideo from "./pages/page_two/images/image.png";
+import CanvaSecond from "./pages/page_two/images/CanvaSecond.png";
+import C from "./pages/page_two/images/Latter_C.jfif";
+import oneCanva from "./pages/page_two/images/OneCanva.jpg";
 
 function App() {
   const [Not_open, Now_Open] = useState(false);
@@ -20,23 +23,23 @@ function App() {
       link: " By Invideo Ai",
     },
     {
-      imgSrc: Invideo,
-      heading: " Expandia",
-      text: "Bring Your Idea To life",
-      link: "IBy expendia.com",
+      imgSrc: oneCanva,
+      heading: "Canva",
+      text: "Effortlessly design anything :presentations,socal media Posts & more",
+      link: "By expendia.com",
     },
     {
-      imgSrc: Invideo,
-      heading: " Unknow Ai",
-      text: "Solo Pro AI from home  to mommey and come  home becomes happy and sad",
-      link: "SoloNow or Link",
+      imgSrc: Splash,
+      heading: "Splash",
+      text: "Splash design anything :presentations,socal media Posts & more",
+      link: "By Splash.com",
     },
-    {
-      imgSrc: Invideo,
-      heading: " Unknow Ai",
-      text: "Solo Pro AI from home  to mommey and come  home becomes happy and sad",
-      link: "SoloNow or Link",
-    },
+    // {
+    //   imgSrc: Invideo,
+    //   heading: " Unknow Ai",
+    //   text: "Solo Pro AI from home  to mommey and come  home becomes happy and sad",
+    //   link: "SoloNow or Link",
+    // },
   ];
   return (
     <>
@@ -53,6 +56,8 @@ function App() {
             />
           ))}
         </div>
+
+        {/*  solo */}
 
         {/* <Discover Toggle={() => Now_Open(true)} />
         <Slide Visblity_Of_slide={Not_open} On_Close={() => Now_Open(false)} /> */}
