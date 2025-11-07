@@ -48,8 +48,8 @@ function App() {
       <div className="">
         <Discover Toggle={() => Now_Open(true)} />
         <Slide Visblity_Of_slide={Not_open} On_Close={() => Now_Open(false)} />
-        <div className="mt-[9rem] min-h-screen  ">
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full md:w-9/10  max-w-6xl my-5 md:mx-[2rem]">
+        <div className="min-h-screen flex justify-center items-start mt-[9rem] px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-[90%] max-w-6xl my-5">
             {AllPhotes.map((item, index) => (
               <Ai_trends
                 key={index}
@@ -60,8 +60,8 @@ function App() {
               />
             ))}
           </div>
-        </div>{" "}
-        */}
+        </div>
+
         {/* <Landing Toggle={() => Now_Open(true)} />
 
         {/* <MainBox />
