@@ -27,7 +27,7 @@ function SearchPage() {
   }, []);
   return (
     <>
-      <div className="border-2 bg-transparent border-silver rounded-xl p-2 mx-5 mb-[1rem]  ">
+      <div className="border-2 bg-transparent border-silver rounded-xl p-2 mx-5 mb-[2rem]  ">
         {/* Top controls (Search / ReSearch) */}
         <div className="flex items-center gap-4 ml-4 ">
           <div className="flex items-center gap-1 bg-[#363654] rounded-lg cursor-pointer px-2 py-1 mt-2">

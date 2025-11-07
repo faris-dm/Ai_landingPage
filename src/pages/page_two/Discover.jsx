@@ -25,7 +25,7 @@ function Discover({ Toggle }) {
   return (
     <>
       <div>
-        <nav className="px-5 pt-[1rem] mb-[6rem]">
+        <nav className="px-5 pt-[1rem] mb-[2rem]">
           <div className="flex  items-center justify-between m-auto">
             <ListFilter onClick={Toggle} className="cursor-pointer" />
             <div> ...</div>
@@ -63,6 +63,9 @@ function Discover({ Toggle }) {
               <div>Education</div>
               <div>Codeing</div>
             </div>
+          </div>
+          <div>
+            <div></div>
           </div>
         </div>
       </div>
