@@ -9,8 +9,9 @@ function Discover({ Toggle }) {
       div.classList.add(
         "px-7",
         "py-2",
-
-        "bg-[#212121]",
+        "cursor-pointer",
+        "rounded-xl",
+        "bg-[#0D1020]",
         "text-[15px]",
         "text-[#b0b0b0]",
         "rounded",
@@ -24,22 +25,25 @@ function Discover({ Toggle }) {
 
   return (
     <>
-      <div>
-        <nav className="px-5 pt-[1rem] mb-[2rem]">
-          <div className="flex  items-center justify-between m-auto">
+      <div className="bg-[#151734] mt-[10rem] z-1">
+        <nav className="px-5 pt-[1rem] mb-[2rem]  bg-[#151734]   fixed top-0 left-0 w-full  z-1">
+          <div className="flex    items-center justify-between m-auto ">
             <ListFilter onClick={Toggle} className="cursor-pointer" />
-            <div> ...</div>
+            <div className=""> ...</div>
           </div>
         </nav>
-        <div className="flex items-center justify-center  ">
-          <div className="fixed mt-[20rem] md:mt-[7rem]">
+        <div className="flex  items-center justify-center   md:mt-[10rem]  ">
+          <div className="fixed   md:w-[90%] bg-[#151734]  mt-[10rem] md:mt-[7rem]">
             <div className="text-center px-5 mb-5 ">
-              <h2 className="font-bold text-3xl pb-3 font-poppins">
+              <h2 className="font-bold text-3xl pb-3 font-poppins md:mt-[1rem]">
                 Cricle Ai
               </h2>
               <p className="text-normal font-system-ui font-[200] px-5 mx-[3rem]">
-                Discover and create custom versions of ChatGPT that combine
-                instructions, extra knowledge, and any combination of skills.
+                Discover and create custom versions of ChatGPT
+                <p className="hidden sm:block">
+                  that combine instructions, extra knowledge, and any
+                  combination of skills.
+                </p>
               </p>
             </div>
             <div className="flex items-center  mx-10 sm:mx-12 md:mx-6 border border-cyan-750 p-2 rounded-xl">
@@ -51,7 +55,7 @@ function Discover({ Toggle }) {
             </div>
 
             {/*  list of items */}
-            <div className="  All grid grid-cols-3 md:grid grid-cols-2 lg:flex items-center justify-center my-4 gap-4  mx-3  px-7">
+            <div className="   All grid grid-cols-3 md:grid grid-cols-2 lg:flex items-center justify-center my-4 gap-4  mx-3  px-7  md:mb-[1rem] ">
               <div>
                 <p>Top Visted</p>
               </div>

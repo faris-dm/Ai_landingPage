@@ -82,60 +82,9 @@ function SearchPage() {
           </div>
         </div>
       </div>
-
-      {/* px-4 pt-10  pl-3 pr-2 resize-none   border bg-transparent border-silver-200 rounded-xl  w-8/9  */}
-      {/* <div className="border-2  border-silver rounded-xl p-2 mx-5">
-        <div>
-          <div className="flex item-center gap-4 ml-4">
-            <div className="flex items-center gap-1   bg-[#363654] rounded-lg cursor-pointer  px-2 py-1 mt-2 ">
-              <Search size={12} />
-              <p className="text-[12px] text-silver-500">Search</p>{" "}
-            </div>
-            <div className="flex items-center gap-1 bg-[#363654] rounded-lg  px-2 py-1 mt-2">
-              <Zap className="" size={12} />
-              <p className="text-[12px] text-silver-500">ReSearch</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-between px-4 py-6">
-          <textarea w={50} placeholder=" Ask anything" id=""></textarea>
-          <div className="flex items-center gap-3">
-            <Paperclip size={15} />
-            <Mic size={15} />
-            <Send className="bg-[#303030] rounded  p-1" size={25} />
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }
 //
 
 export default SearchPage;
-
-//   <div>
-//     <div className=" text-center  relative   mt-[5rem]  lg:mt-[10rem] mb-3">
-//       <textarea className=" " placeholder="Ask anything . . . . ." />
-//       <div className="flex items-center gap-2 absolute  bottom-15 left-12 sm:left-15 md:left-20 lg:left-25">
-//         <div className="flex items-center gap-1   bg-[#363654] rounded  px-2 py-1 mt-2 ">
-//           <Search size={12} />
-//           <p className="text-[12px] text-silver-500">Search</p>
-//         </div>
-
-//         <div className="flex items-center gap-1   bg-[#363654] rounded  px-2 py-1 mt-2 bg-[#]">
-//           <Zap size={12} />
-//           <p className="text-[12px]">Research</p>
-//         </div>
-//       </div>
-//       <div className="flex items-center gap-2 absolute  bottom-4 right-12 sm:right-15 md:right-20 lg:right-25">
-//         <Paperclip size={15} />
-//         <Mic size={15} />
-//         <AudioLines className="bg-[#303030] rounded  p-1" size={25} />
-//       </div>
-
-//       {/*  voice */}
-//     </div>
-
-//     {/*  left side */}
-//   </div>;
