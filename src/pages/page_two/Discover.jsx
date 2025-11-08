@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Search, ListFilter, Container } from "lucide-react";
 import SearchPage from "../SearchPage";
+import { table } from "framer-motion/client";
 
 function Discover({ Toggle }) {
+  const textValue = useRef(null);
   useEffect(() => {
     const Container_divs = document.querySelectorAll(".All div");
     Container_divs.forEach((div) => {
@@ -23,11 +25,22 @@ function Discover({ Toggle }) {
       [];
   });
 
+  //  for thr input
+  const Resize = () => {
+    const Table = textValue.current;
+    if (!Table) return;
+    Table.style.height = "auto";
+    Table.style.height = table.scrollHeight + "px";
+  };
+  useEffect(() => {
+    Resize();
+  }, []);
+
   return (
     <>
       <div className="bg-[#151734] mt-[10rem] z-1">
         <nav className="px-5 pt-[1rem] mb-[2rem]  bg-[#151734]   fixed top-0 left-0 w-full  z-1">
-          <div className="flex    items-center justify-between m-auto ">
+          <div className="flex items-center justify-between m-auto ">
             <ListFilter onClick={Toggle} className="cursor-pointer" />
             <div className=""> ...</div>
           </div>
@@ -48,6 +61,10 @@ function Discover({ Toggle }) {
             </div>
             <div className="flex items-center  mx-10 sm:mx-12 md:mx-6 border border-cyan-750 p-2 rounded-xl">
               <textarea
+                name=""
+                id=""
+                ref={textValue}
+                onInput={Resize}
                 className="w-full resize-none outline-none -hidden my-2 rounded-lg box-border min-h-[42px] max-h-40 "
                 placeholder="Search Cricle Ai"
               ></textarea>

@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <div className="">
-        {/* <Discover Toggle={() => Now_Open(true)} />
+        <Discover Toggle={() => Now_Open(true)} />
         <Slide Visblity_Of_slide={Not_open} On_Close={() => Now_Open(false)} />
         <div className="min-h-screen flex justify-center items-start mt-[9rem] px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  gap-6 w-[90%] max-w-6xl my-5 mt-[8rem] sm:mt-[7rem] md:mt-[6rem] ">
@@ -60,11 +60,11 @@ function App() {
               />
             ))}
           </div>
-        </div> */}
-        <Slide Visblity_Of_slide={Not_open} On_Close={() => Now_Open(false)} />
-        <Landing Toggle={() => Now_Open(true)} />
+        </div>
+        {/* <Slide Visblity_Of_slide={Not_open} On_Close={() => Now_Open(false)} /> */}
+        {/* <Landing Toggle={() => Now_Open(true)} />
         /<MainBox />
-        <SearchPage />
+        <SearchPage /> */}
       </div>
     </>
   );
