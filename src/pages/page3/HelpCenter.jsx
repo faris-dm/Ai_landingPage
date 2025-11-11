@@ -62,13 +62,18 @@ function HelpCenter() {
           Help Center
         </h3>
 
-        <div className="flex gap-3 items-center mx-5 border border-cyan-900 text=white p-5 rounded-3xl">
+        <div className="flex gap-3 items-center mx-5 border border-cyan-900 text-white p-2  rounded-3xl">
+          <input
+            className=" w-[90%] rounded-xl outline-none p-3"
+            type="text"
+            placeholder="Search"
+            id=""
+          />
           <Search />
-          <input type="text" placeholder="Search" id="" />
         </div>
 
         {/* Submit Section */}
-        <div>
+        <div className="mx-4">
           <h2 className="text-3xl font-bold mx-5 my-3">Submit a request</h2>
 
           <form action="">
@@ -117,7 +122,7 @@ function HelpCenter() {
               <input
                 type="email"
                 className="block outline-none w-[90%]"
-                placeholder="Search "
+                placeholder="enter your email "
               />
             </div>
             {/*  name */}
@@ -126,7 +131,7 @@ function HelpCenter() {
               <input
                 type="email"
                 className="block outline-none w-[90%]"
-                placeholder="Search "
+                placeholder="eg Henok Seri "
               />
             </div>
             <label className="mx-5">Subject</label>
@@ -137,34 +142,45 @@ function HelpCenter() {
                 placeholder="Crome "
               />
             </div>
-            <div className="">
-              <p>description</p>
-              <div className="flex justify-center gap-2 py-4 ">
-                <p>paragraph</p>
-                <p>
-                  {" "}
-                  <Bold size={20} className="text-black font-[900]" />
-                </p>
-                <p>
-                  {" "}
-                  <Italic size={20} className="text-black" />{" "}
-                </p>
-                <p className="bg-[#b0b0b0] rounded-sm p-1">
-                  <Terminal size={20} className="text-black" />
-                </p>
-                <p>
-                  <Terminal size={20} className="text-black" />
-                </p>
-                <p>
-                  <Link size={20} className="text-black" />
-                </p>
-                <p>
-                  {" "}
-                  <List size={20} className="text-black" />
-                </p>
-                <p>
-                  <Option size={20} className="text-black" />
-                </p>
+            <div className=" ">
+              <p>Description</p>
+              <div className="rounded-xl bg-[#fff] mb-[4rem] mx-10 w-[50%]">
+                <div className="flex justify-center gap-2 py-4  ">
+                  <p className="text-[#b0b0b0] font-bold">paragraph</p>
+                  <p className=" rounded-sm p-1">
+                    {" "}
+                    <Bold size={20} className="text-black font-[900]" />
+                  </p>
+                  <p className=" rounded-sm p-1">
+                    {" "}
+                    <Italic size={20} className="text-black" />{" "}
+                  </p>
+                  <p className=" rounded-sm p-1">
+                    <Terminal size={20} className="text-black" />
+                  </p>
+                  <p className=" rounded-sm p-1">
+                    <Terminal size={20} className="text-black" />
+                  </p>
+                  <p className=" rounded-sm p-1">
+                    <Link size={20} className="text-black" />
+                  </p>
+                  <p className=" rounded-sm p-1">
+                    {" "}
+                    <List size={20} className="text-black" />
+                  </p>
+                  <p className="rounded-sm p-1">
+                    <Option size={20} className="text-black" />
+                  </p>
+                </div>
+                <textarea
+                  className="mx-5 w-5/6 h-5/9"
+                  name=""
+                  cols={3}
+                  rows={5}
+                  id=""
+                >
+                  solo naser
+                </textarea>
               </div>
             </div>
           </form>
