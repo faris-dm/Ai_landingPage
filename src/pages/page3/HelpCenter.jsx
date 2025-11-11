@@ -47,6 +47,8 @@ function HelpCenter() {
             <Ai_Logo />
             <h2 className="font-[600] text-xl">Cricle</h2>
           </div>
+
+          <div>{/*  end this section */}</div>
           {/* sec header */}
           <div className="text-xl font-[300]">
             <h2>Help Center</h2>
@@ -58,133 +60,165 @@ function HelpCenter() {
         </nav>
 
         {/* Search */}
-        <h3 className="my-4 mx-2 text-lg font-[200] text-cyan-700">
-          Help Center
-        </h3>
 
-        <div className="flex gap-3 items-center mx-5 border border-cyan-900 text-white p-2  rounded-3xl">
-          <input
-            className=" w-[90%] rounded-xl outline-none p-3"
-            type="text"
-            placeholder="Search"
-            id=""
-          />
-          <Search />
+        <div className=" md:flex lg:flex  items-start justify-between  m-4">
+          <div className=" flex-1 ">
+            <div className="md:flex items-start justify-between">
+              <div className="flex-1">
+                <h3 className="  my-4 mx-2 text-lg font-[200] text-cyan-700">
+                  Help Center
+                </h3>
+              </div>
+
+              <div className="flex-1">
+                <div className="flex gap-3 items-center mx-5 border border-cyan-900 text-white p-2  rounded-3xl">
+                  <input
+                    className=" w-[90%] rounded-xl outline-none p-3"
+                    type="text"
+                    placeholder="Search"
+                    id=""
+                  />
+                  <Search />
+                </div>
+              </div>
+            </div>
+
+            {/*  part two */}
+            <div className="md:flex items-start justify-center">
+              <div className="flex-1">
+                <div className="mx-4">
+                  <h2 className="text-3xl font-bold mx-5 my-3">
+                    Submit a request
+                  </h2>
+                </div>
+                <form action="">
+                  <label>What Can We Help you with</label>
+
+                  <div
+                    onClick={toggleDropdown}
+                    className="border bg-transparent rounded-xl p-3 w-[89%] m-2"
+                  >
+                    {/* FIXED: Dropdown trigger button now calls toggleDropdown */}
+
+                    <div>
+                      <button
+                        className="flex "
+                        type="button"
+                        onClick={toggleDropdown}
+                      >
+                        <p
+                          className={`transform  px-2 transition-transform   ${
+                            isOpen ? "-rotate-90" : ""
+                          }`}
+                        >
+                          ▼
+                        </p>
+                        <p className="text-sm font-serif pt-[px] ">
+                          {" "}
+                          {selectedItem}
+                        </p>
+                      </button>
+
+                      {/*  si open down */}
+                      {/* DROPDOWN MENU - Only shows when isOpen is true */}
+                      {isOpen && (
+                        <div className="">
+                          <ul>
+                            {Items.map((item, index) => (
+                              <li
+                                className="border p-2  my-2 rounded-xl p-3"
+                                key={index}
+                              >
+                                <button
+                                  className="text-sm font-serif "
+                                  type="button"
+                                  onClick={() => handleTheSlectedOne(item)}
+                                >
+                                  {item}
+                                </button>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  <label>Your Email address</label>
+                  <div className="border border-silver p-2 m-2 w-[90%]">
+                    <input
+                      type="email"
+                      className="block outline-none w-[90%]"
+                      placeholder="enter your email "
+                    />
+                  </div>
+                  {/*  name */}
+                  <label className="mx-5">Your Name</label>
+                  <div className="border border-silver p-2 m-2 w-[90%]">
+                    <input
+                      type="email"
+                      className="block outline-none w-[90%]"
+                      placeholder="eg Henok Seri "
+                    />
+                  </div>
+                  <label className="mx-5">Subject</label>
+                  <div className="border border-silver p-2 m-2 w-[90%]">
+                    <input
+                      type="email"
+                      className="block outline-none w-[90%]"
+                      placeholder="Crome "
+                    />
+                  </div>
+                  <div className=" ">
+                    <p>Description</p>
+                    <div className="rounded-xl bg-[#dedede] mb-[4rem]  w-[83%] mx-3 my-2 p-3 ">
+                      <div className="flex justify-center gap-2 py-4  ">
+                        <p className="text-[#b0b0b0] font-bold">paragraph</p>
+                        <p className=" rounded-sm p-1">
+                          {" "}
+                          <Bold size={20} className="text-black font-[900]" />
+                        </p>
+                        <p className=" rounded-sm p-1">
+                          {" "}
+                          <Italic size={20} className="text-black" />{" "}
+                        </p>
+                        <p className=" rounded-sm p-1">
+                          <Terminal size={20} className="text-black" />
+                        </p>
+                        <p className=" rounded-sm p-1">
+                          <Terminal size={20} className="text-black" />
+                        </p>
+                        <p className=" rounded-sm p-1">
+                          <Link size={20} className="text-black" />
+                        </p>
+                        <p className=" rounded-sm p-1">
+                          {" "}
+                          <List size={20} className="text-black" />
+                        </p>
+                        <p className="rounded-sm p-1">
+                          <Option size={20} className="text-black" />
+                        </p>
+                      </div>
+                      <textarea
+                        className="outline-none hover:outline outline-silver  text-[#000]  text-lg font-serif cursor-pointer rounded  resize-none  p-3 h-[50%] w-[90%]"
+                        name=""
+                        id=""
+                      >
+                        solo naser
+                      </textarea>
+                    </div>
+                  </div>
+                </form>
+
+                {/*  frist elements */}
+              </div>
+              <div className="flex-1">{/* empty elements */}</div>
+            </div>
+          </div>
+
+          {/* lower Part */}
         </div>
 
         {/* Submit Section */}
-        <div className="mx-4">
-          <h2 className="text-3xl font-bold mx-5 my-3">Submit a request</h2>
-
-          <form action="">
-            <label>What Can We Help you with</label>
-
-            <div
-              onClick={toggleDropdown}
-              className="border rounded-xl p-3 w-[89%] m-2"
-            >
-              {/* FIXED: Dropdown trigger button now calls toggleDropdown */}
-              <button className="flex " type="button" onClick={toggleDropdown}>
-                <p
-                  className={`transform  px-2 transition-transform   ${
-                    isOpen ? "-rotate-90" : ""
-                  }`}
-                >
-                  ▼
-                </p>
-                <p className="text-sm font-serif pt-[px] "> {selectedItem}</p>
-              </button>
-
-              {/* DROPDOWN MENU - Only shows when isOpen is true */}
-              {isOpen && (
-                <div className="">
-                  <ul>
-                    {Items.map((item, index) => (
-                      <li
-                        className="border p-2  my-2 rounded-xl p-3"
-                        key={index}
-                      >
-                        <button
-                          className="text-sm font-serif "
-                          type="button"
-                          onClick={() => handleTheSlectedOne(item)}
-                        >
-                          {item}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-            <label>Your Email address</label>
-            <div className="border border-silver p-2 m-2 w-[90%]">
-              <input
-                type="email"
-                className="block outline-none w-[90%]"
-                placeholder="enter your email "
-              />
-            </div>
-            {/*  name */}
-            <label className="mx-5">Your Name</label>
-            <div className="border border-silver p-2 m-2 w-[90%]">
-              <input
-                type="email"
-                className="block outline-none w-[90%]"
-                placeholder="eg Henok Seri "
-              />
-            </div>
-            <label className="mx-5">Subject</label>
-            <div className="border border-silver p-2 m-2 w-[90%]">
-              <input
-                type="email"
-                className="block outline-none w-[90%]"
-                placeholder="Crome "
-              />
-            </div>
-            <div className=" ">
-              <p>Description</p>
-              <div className="rounded-xl bg-[#fff] mb-[4rem] mx-10 w-[50%]">
-                <div className="flex justify-center gap-2 py-4  ">
-                  <p className="text-[#b0b0b0] font-bold">paragraph</p>
-                  <p className=" rounded-sm p-1">
-                    {" "}
-                    <Bold size={20} className="text-black font-[900]" />
-                  </p>
-                  <p className=" rounded-sm p-1">
-                    {" "}
-                    <Italic size={20} className="text-black" />{" "}
-                  </p>
-                  <p className=" rounded-sm p-1">
-                    <Terminal size={20} className="text-black" />
-                  </p>
-                  <p className=" rounded-sm p-1">
-                    <Terminal size={20} className="text-black" />
-                  </p>
-                  <p className=" rounded-sm p-1">
-                    <Link size={20} className="text-black" />
-                  </p>
-                  <p className=" rounded-sm p-1">
-                    {" "}
-                    <List size={20} className="text-black" />
-                  </p>
-                  <p className="rounded-sm p-1">
-                    <Option size={20} className="text-black" />
-                  </p>
-                </div>
-                <textarea
-                  className="mx-5 w-5/6 h-5/9"
-                  name=""
-                  cols={3}
-                  rows={5}
-                  id=""
-                >
-                  solo naser
-                </textarea>
-              </div>
-            </div>
-          </form>
-        </div>
       </div>
     </>
   );
