@@ -44,7 +44,7 @@ function Slide({ Visblity_Of_slide, On_Close }) {
         </Link>
         {/* 2nd */}
         <Link
-          to="Discover"
+          to="/Discover"
           onClick={() => NewColor(2)}
           className={`font-[500] py-4 px-3 flex items-center my-3  rounded-xl hover:bg-cyan-950  gap-2 text-base text-left cursor-pointer ${
             NormalColor === 2 ? "bg-cyan-700 rounded-xl" : ""

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Ai_Logo from "../Ai_Logo";
+
 import {
   Menu,
   Search,
@@ -9,6 +10,8 @@ import {
   List,
   Terminal,
   Link,
+  ListFilter,
+  MessageCircleDashed,
 } from "lucide-react";
 import { li } from "framer-motion/client";
 
@@ -54,8 +57,9 @@ function HelpCenter({ Toggle }) {
   return (
     <>
       <div>
-        <nav className="flex items-center justify-between mx-5 py-2 border-b py-3">
-          <div className="flex items-center gap-4 py-1">
+        <nav className="  flex items-center justify-between mx-5 py-2 border-b py-3">
+          <div className="z-0 flex items-center gap-4 py-1">
+            <ListFilter onClick={Toggle} />
             <Ai_Logo />
             <h2 className="font-[600] text-xl">Cricle</h2>
           </div>
@@ -67,7 +71,7 @@ function HelpCenter({ Toggle }) {
           </div>
           {/* menu */}
           <div className="">
-            <Menu onClick={Toggle} className=" sm:block md:hidden lg:hidden" />
+            <MessageCircleDashed className=" sm:block md:hidden lg:hidden" />
             <div className="flex hidden sm:hidden md:block lg:block">
               <div className="flex items-center gap-2 text-sm text-underline">
                 <p className="text-blue-400 ">Report a bug</p>
