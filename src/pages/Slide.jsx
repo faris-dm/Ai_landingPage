@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Ai_Logo from "./Ai_Logo";
 import { House, Compass, FolderOpen, Library } from "lucide-react";
 import { Link } from "react-router-dom";
+import HelpCenter from "./page3/HelpCenter";
 
 function Slide({ Visblity_Of_slide, On_Close }) {
   const [NormalColor, NewColor] = useState(null);
@@ -63,15 +64,16 @@ function Slide({ Visblity_Of_slide, On_Close }) {
           <p>Library</p>
         </div>
         {/* 4th */}
-        <div
+        <Link
+          to="/HelpCenter"
           onClick={() => NewColor(4)}
           className={`font-[500] py-4 flex items-center px-3 my-3  gap-2  rounded-xl hover:bg-cyan-950 text-base text-left cursor-pointer ${
             NormalColor === 4 ? "bg-cyan-700 rounded-xl" : ""
           }`}
         >
           <FolderOpen className="text-[#4B7BF6] " />
-          <p>Projects</p>
-        </div>
+          <p>Help Center</p>
+        </Link>
       </div>
     </>
   );

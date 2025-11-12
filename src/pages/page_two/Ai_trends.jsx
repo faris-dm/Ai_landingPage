@@ -4,7 +4,6 @@ function Ai_trends({ imgSrc, heading, text, link }) {
   return (
     <div className="flex justify-center items-center min-h-16  ">
       {" "}
-      {/* ✅ Full centering */}
       <div className="bg-[#0D1020] rounded-2xl p-5 gap-4 w-full max-w-lg mx-auto">
         {/* Circular image */}
         <div className="flex items-center gap-2">
